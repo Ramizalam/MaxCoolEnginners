@@ -3,7 +3,7 @@ import { X } from 'lucide-react';
 import { GalleryItem } from '../types';
 import ductingImg from '../asset/Ducting work.avif';
 import ductableImg from '../projects/split AC maintinance.jpg';
-import chillerImg from '../projects/chillerPlant.jpg';
+import chillerImg from '../projects/chillerPlant.JPG';
 import coldRoomImg from '../asset/Cold Room.jpg';
 import hvacRepairImg from '../projects/Outdoor.jpg';
 import freezerImg from '../projects/Ac maintinance.jpg';
