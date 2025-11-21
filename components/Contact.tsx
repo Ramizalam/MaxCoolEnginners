@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Phone, Mail, MapPin, Clock } from 'lucide-react';
 import emailjs from '@emailjs/browser';
+import { toast } from 'react-toastify';
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -33,7 +34,7 @@ const Contact: React.FC = () => {
     const publicKey = env.VITE_EMAILJS_PUBLIC_KEY;
 
     if (!serviceId || !templateId || !publicKey) {
-      alert('EmailJS is not configured. Please set VITE_EMAILJS_SERVICE_ID, VITE_EMAILJS_TEMPLATE_ID and VITE_EMAILJS_PUBLIC_KEY in your .env');
+      toast.error('EmailJS is not configured. Please set environment variables.');
       return;
     }
 
@@ -51,12 +52,12 @@ const Contact: React.FC = () => {
 
     emailjs.send(serviceId, templateId, templateParams, publicKey)
       .then(() => {
-        alert('Thank you! Your message has been sent.');
+        toast.success('Thank you! Your message has been sent.');
         setFormData({ name: '', email: '', phone: '', service: '', message: '' });
       })
       .catch((err) => {
         console.error('EmailJS error:', err);
-        alert('Failed to send message. Please try again later.');
+        toast.error('Failed to send message. Please try again later.');
       })
       .finally(() => setIsSubmitting(false));
   };
