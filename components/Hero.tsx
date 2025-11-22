@@ -15,7 +15,7 @@ const Hero: React.FC = () => {
         <div className="absolute inset-0 bg-slate-900/70 bg-gradient-to-r from-slate-900/90 to-transparent"></div>
       </div>
 
-      <div className="container mx-auto px-4 relative z-10 pt-20">
+      <div className="container mx-auto px-4 relative  pt-20">
         <div className="max-w-3xl text-white">
           <div className="inline-block bg-blue-600/30 backdrop-blur-sm border border-blue-400/30 px-4 py-1 rounded-full text-sm font-semibold mt-2 mb-6 text-blue-100">
             Trusted HVAC Experts Since 1989
