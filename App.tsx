@@ -35,7 +35,7 @@ function App() {
         pauseOnFocusLoss
         draggable
         pauseOnHover
-        theme="light"
+        theme="light" 
         aria-label="Notifications"
       />
     </div>
