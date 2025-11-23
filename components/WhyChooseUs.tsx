@@ -39,7 +39,7 @@ const WhyChooseUs: React.FC = () => {
     <section className="py-20 bg-slate-900 text-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Why Choose CoolTech?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Why Choose Us?</h2>
           <p className="text-slate-400 max-w-2xl mx-auto">
             We combine technical expertise with superior customer service to deliver results that last.
           </p>
